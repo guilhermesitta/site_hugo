@@ -1,0 +1,18 @@
+hugo new site meu-site
+cd meu-site
+
+  git init
+git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
+echo 'theme = "ananke"' >> config.toml
+
+  hugo new index.md
+---
+title: "Meu Site"
+date: 2023-07-31
+---
+
+Bem-vindo ao meu site criado com Hugo!
+
+  hugo server -D
+
+  hugo
